@@ -1,11 +1,11 @@
-import { FunctionComponent, memo } from "react";
+import { FunctionComponent } from "react";
 import LogoBigImage from "./LogoBigImage";
 import StateDefault from "./StateDefault";
 import HomeWelcome from "./HomeWelcome";
 
-const HomeMenu: FunctionComponent = memo(() => {
+const HomeMenu: FunctionComponent = () => {
   return (
-    <div className="bg-black w-[1080px] h-[1920px] flex flex-col items-center justify-end gap-[96px]">
+    <section className="relative bg-black w-full h-[1920px] flex flex-col items-center justify-end gap-[96px]">
       <section className="w-[698px] overflow-hidden flex flex-col p-5 box-border items-center justify-end">
         <LogoBigImage
           imageDimensions="/logobig1.png"
@@ -48,7 +48,7 @@ const HomeMenu: FunctionComponent = memo(() => {
         />
       </section>
       <SloganSection
-        imageResolution="/pptxbg2.png"
+        imageResolution="/pptxbg.png"
         imageId="/metrocreativetechmemorableslogan2.png"
         propPosition="relative"
         propMargin="unset"
@@ -58,8 +58,8 @@ const HomeMenu: FunctionComponent = memo(() => {
         propZIndex="unset"
         propAlignSelf="stretch"
       />
-    </div>
+    </section>
   );
-});
+};
 
 export default HomeMenu;

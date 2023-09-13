@@ -26,8 +26,8 @@ const PhotoBoothSmile1: FunctionComponent = () => {
       </div>
       <div className="absolute top-[0px] left-[-6px] w-[1086px] h-[180px] overflow-hidden">
         <TopNavBar
-          mSign1="/m-sign-1.png"
-          dimensionCode="/undefined3.png"
+          mSign1="/undefined2.png"
+          dimensionCode="/undefined.png"
           topNavBarPosition="absolute"
           topNavBarTop="0px"
           topNavBarLeft="6px"

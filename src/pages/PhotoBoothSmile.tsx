@@ -10,7 +10,7 @@ const PhotoBoothSmile: FunctionComponent = () => {
         <div className="self-stretch overflow-hidden flex flex-col items-end justify-center">
           <TopNavBar
             mSign1="/undefined2.png"
-            dimensionCode="/undefined3.png"
+            dimensionCode="/undefined31.png"
             topNavBarPosition="unset"
             topNavBarTop="unset"
             topNavBarLeft="unset"
@@ -34,7 +34,7 @@ const PhotoBoothSmile: FunctionComponent = () => {
           <img
             className="self-stretch relative max-w-full overflow-hidden h-[653px] shrink-0 object-cover"
             alt=""
-            src="/undefined4.png"
+            src="/undefined41.png"
           />
           <div className="self-stretch overflow-hidden flex flex-col items-end justify-center">
             <Statecta

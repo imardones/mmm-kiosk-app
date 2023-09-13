@@ -7,7 +7,7 @@ const Map1: FunctionComponent = () => {
       <img
         className="absolute top-[1471px] left-[13px] w-[1055px] h-[585px] object-cover"
         alt=""
-        src="/undefined9.png"
+        src="/undefined1.png"
       />
       <div className="absolute top-[1193px] left-[35px] [background:linear-gradient(180deg,_#000,_rgba(0,_0,_0,_0.29))] w-[1080px] h-[228px]" />
       <img
@@ -18,7 +18,7 @@ const Map1: FunctionComponent = () => {
       <img
         className="absolute top-[462px] left-[174px] w-[732px] h-[940px] object-cover"
         alt=""
-        src="/undefined10.png"
+        src="/undefined3.png"
       />
       <TopNavBar
         mSign1="/undefined2.png"

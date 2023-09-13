@@ -92,8 +92,8 @@ const PhotoBoothSelfieQuestion: FunctionComponent = () => {
         </h1>
       </section>
       <TopNavBar
-        mSign1="/m-sign-1.png"
-        dimensionCode="/undefined3.png"
+        mSign1="/undefined2.png"
+        dimensionCode="/undefined.png"
         topNavBarPosition="absolute"
         topNavBarTop="0px"
         topNavBarLeft="0px"

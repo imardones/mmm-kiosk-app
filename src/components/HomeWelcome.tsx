@@ -1,8 +1,17 @@
-import { FunctionComponent, memo } from "react";
+import { FunctionComponent, memo, useCallback } from "react";
 
 const HomeWelcome: FunctionComponent = memo(() => {
+  const onPrimaryNavBtnHomeClick = useCallback(() => {
+    const anchor = document.querySelector(
+      "[data-scroll-to='primaryNavBtnHome']"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
+
   return (
-    <main className="relative bg-black w-full h-[1920px] overflow-hidden flex flex-col py-[100px] px-0 box-border items-center justify-start gap-[178px]">
+    <section className="relative bg-black w-full h-[1920px] overflow-hidden flex flex-col py-[100px] px-0 box-border items-center justify-start gap-[178px]">
       <main className="w-[698px] h-[281px] overflow-hidden shrink-0 flex flex-col p-5 box-border items-center justify-between z-[0]">
         <img
           className="self-stretch relative max-w-full overflow-hidden h-[241px] shrink-0 object-cover"
@@ -15,6 +24,8 @@ const HomeWelcome: FunctionComponent = memo(() => {
       <button
         className="cursor-pointer p-5 bg-cornflowerblue-200 box-border w-[907px] h-[178px] flex flex-col items-center justify-between z-[1] border-[4px] border-solid border-cornflowerblue-100"
         id="welcome"
+        data-scroll-to="primaryNavBtnHome"
+        onClick={onPrimaryNavBtnHomeClick}
         style={primaryNavBtnHomeStyle}
       >
         <div
@@ -29,15 +40,15 @@ const HomeWelcome: FunctionComponent = memo(() => {
           <img
             className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
             alt=""
-            src="/pptxbg.png"
+            src="/pptxbg1.png"
           />
         </div>
-        <div className="absolute top-[0px] left-[132px] w-[817px] h-[395px]">
+        <div className="absolute top-[104px] left-[124px] w-[596px] h-72">
           <img
             className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
             loading="lazy"
             alt=""
-            src="/metrocreativetechmemorableslogan.png"
+            src="/metrocreativetechmemorableslogan1.png"
           />
         </div>
       </section>
@@ -49,7 +60,7 @@ const HomeWelcome: FunctionComponent = memo(() => {
           src="/undefined5.png"
         />
       </div>
-    </main>
+    </section>
   );
 });
 

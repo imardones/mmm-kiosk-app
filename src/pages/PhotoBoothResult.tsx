@@ -44,7 +44,7 @@ const PhotoBoothResult: FunctionComponent = () => {
       <SecondaryCtaRetakePhoto />
       <header className="absolute top-[0px] left-[-6px] w-[1086px] h-[180px] overflow-hidden">
         <TopNavBar
-          mSign1="/m-sign-1.png"
+          mSign1="/undefined2.png"
           dimensionCode="/vector.png"
           topNavBarPosition="absolute"
           topNavBarTop="0px"

@@ -5,11 +5,12 @@ import {
   useLocation,
 } from "react-router-dom";
 import PhotoBoothResult from "./pages/PhotoBoothResult";
-import PhotoBoothSmile from "./pages/PhotoBoothSmile";
+import Projects from "./pages/Projects";
 import PhotoBoothSmile1 from "./pages/PhotoBoothSmile1";
 import PhotoBoothSelfieQuestion from "./pages/PhotoBoothSelfieQuestion";
 import Map1 from "./pages/Map1";
-import Projects from "./pages/Projects";
+import HomeMenu from "./components/HomeMenu";
+import PhotoBoothSmile from "./pages/PhotoBoothSmile";
 import { useEffect } from "react";
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/photoboothsmile1":
+      case "/projects":
         title = "";
         metaDescription = "";
         break;
@@ -48,7 +49,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/projects":
+      case "/homemenu":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/photoboothsmile1":
         title = "";
         metaDescription = "";
         break;
@@ -71,14 +76,15 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<PhotoBoothResult />} />
-      <Route path="/photoboothsmile1" element={<PhotoBoothSmile />} />
+      <Route path="/projects" element={<Projects />} />
       <Route path="/photoboothsmile" element={<PhotoBoothSmile1 />} />
       <Route
         path="/photoboothselfiequestion"
         element={<PhotoBoothSelfieQuestion />}
       />
       <Route path="/map" element={<Map1 />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/homemenu" element={<HomeMenu />} />
+      <Route path="/photoboothsmile1" element={<PhotoBoothSmile />} />
     </Routes>
   );
 }
