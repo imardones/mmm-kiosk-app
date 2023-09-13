@@ -4,12 +4,12 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import PhotoBoothResult from "./pages/PhotoBoothResult";
+import HomeMenu from "./components/HomeMenu";
 import Projects from "./pages/Projects";
 import PhotoBoothSmile1 from "./pages/PhotoBoothSmile1";
 import PhotoBoothSelfieQuestion from "./pages/PhotoBoothSelfieQuestion";
 import Map1 from "./pages/Map1";
-import HomeMenu from "./components/HomeMenu";
+import PhotoBoothResult from "./pages/PhotoBoothResult";
 import PhotoBoothSmile from "./pages/PhotoBoothSmile";
 import { useEffect } from "react";
 
@@ -49,7 +49,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/homemenu":
+      case "/photoboothresult":
         title = "";
         metaDescription = "";
         break;
@@ -75,7 +75,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<PhotoBoothResult />} />
+      <Route path="/" element={<HomeMenu />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/photoboothsmile" element={<PhotoBoothSmile1 />} />
       <Route
@@ -83,7 +83,7 @@ function App() {
         element={<PhotoBoothSelfieQuestion />}
       />
       <Route path="/map" element={<Map1 />} />
-      <Route path="/homemenu" element={<HomeMenu />} />
+      <Route path="/photoboothresult" element={<PhotoBoothResult />} />
       <Route path="/photoboothsmile1" element={<PhotoBoothSmile />} />
     </Routes>
   );

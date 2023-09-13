@@ -13,7 +13,7 @@ const PhotoBoothResult: FunctionComponent = () => {
   }, [navigate]);
 
   const onVectorImageClick = useCallback(() => {
-    navigate("/homemenu");
+    navigate("/");
   }, [navigate]);
 
   return (
