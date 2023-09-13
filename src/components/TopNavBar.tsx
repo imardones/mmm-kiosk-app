@@ -50,7 +50,7 @@ const TopNavBar: FunctionComponent<TopNavBarType> = memo(
       topNavBarAlignSelf,
     ]);
 
-    const frameDiv1Style: CSSProperties = useMemo(() => {
+    const frameDivStyle: CSSProperties = useMemo(() => {
       return {
         height: frameDivHeight,
       };
@@ -75,7 +75,7 @@ const TopNavBar: FunctionComponent<TopNavBarType> = memo(
       >
         <div
           className="bg-white shadow-[0px_5.083333492279053px_5.08px_rgba(0,_0,_0,_0.25)] w-[1080px] h-[180px] flex flex-row p-5 box-border items-center justify-between"
-          style={frameDiv1Style}
+          style={frameDivStyle}
         >
           <img
             className="relative w-[242px] h-[135px] object-cover max-w-[242px] max-h-[135px]"

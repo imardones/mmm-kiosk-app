@@ -15,7 +15,7 @@ const PhotoBoothShare: FunctionComponent<PhotoBoothShareType> = memo(
         <img
           className="absolute top-[0px] left-[0px] w-[1372.5px] h-[193.17px] object-cover"
           alt=""
-          src="/undefined.png"
+          src="/undefined4.png"
         />
         <div className="absolute top-[0px] left-[0px] bg-gray w-[1080px] h-[1920px] text-[60.31px]">
           <div className="absolute top-[518px] left-[72px] bg-white w-[951px] h-[999px] overflow-hidden">

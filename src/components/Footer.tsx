@@ -31,7 +31,7 @@ const Footer: FunctionComponent<FooterType> = memo(
       };
     }, [footerPosition, footerTop, footerLeft, footerHeight, footerAlignSelf]);
 
-    const frameDivStyle: CSSProperties = useMemo(() => {
+    const frameDiv1Style: CSSProperties = useMemo(() => {
       return {
         width: frameDivWidth,
         alignSelf: frameDivAlignSelf,
@@ -45,7 +45,7 @@ const Footer: FunctionComponent<FooterType> = memo(
       >
         <div
           className="relative bg-gainsboro shadow-[0px_5.083333492279053px_5.08px_rgba(0,_0,_0,_0.25)] w-[1372.5px] h-[183px]"
-          style={frameDivStyle}
+          style={frameDiv1Style}
         >
           <div className="absolute top-[181.73px] left-[-1.27px] box-border w-[1375.04px] h-[2.54px] border-t-[2.5px] border-solid border-white" />
           <div className="absolute top-[64px] left-[307.75px] font-extrabold">{`CREATIVE • TECHNICAL • MEMORABLE `}</div>
