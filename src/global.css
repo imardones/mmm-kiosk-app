@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/public/Century Gothic.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("/public/GOTHICB0.TTF");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/public/Avenir Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/public/avenirnext-regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/public/Avenir LT 65 Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/public/Avenir LT 45 Book.ttf");
+  font-weight: 800;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
